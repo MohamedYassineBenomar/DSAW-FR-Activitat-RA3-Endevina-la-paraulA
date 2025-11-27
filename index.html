@@ -1,24 +1,39 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylep1.css">
-
-    <title>Guess the word</title>
+  <meta charset="UTF-8">
+  <title>Joc encertar paraula</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Joc encertar paraula</h1>
-    <p>Introdueix el nom del jugador 1: </p>
-    <input id="txt-input-nom-jugador" type="text">
-    <h2><strong>puntiacio mes alta</strong></h2>
-    <p id="txt-puntiacio-actual">No hi ha puntiacio actual</p>
-    <h2>Informacio navegador</h2>
-    <p id="txt-name-navigador"></p>
-    <h2>idioma del joc</h2>
-    <p id="txt-brozwer-name">ca</p>
-    <h2>Informacio URL</h2>
-    <p id="txt-current-url"></p>
-    <input type="button" value="Comencar partida">
-    <input type="button" value="Borrar puntuacio">
+  <main class="main-container">
+    <h1 class="page-title">Joc encertar paraula</h1>
+
+    <section class="card">
+      <div class="form-row">
+        <label for="playerName">Introduïu el nom del jugador 1:</label>
+        <input type="text" id="playerName" name="playerName">
+      </div>
+
+      <h2 class="section-title">Puntuació més alta</h2>
+      <p id="bestScoreText">No hi ha puntuació actual</p>
+
+      <h2 class="section-title">Informació navegador</h2>
+      <p id="browserInfo"></p>
+
+      <h2 class="section-title">Idioma del joc</h2>
+      <p id="languageInfo"></p>
+
+      <h2 class="section-title">Informació URL</h2>
+      <p id="urlInfo"></p>
+
+      <div class="buttons-row">
+        <button id="startGameButton" class="btn primary">Començar partida</button>
+        <button id="clearScoreButton" class="btn danger">Borrar puntuació</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
